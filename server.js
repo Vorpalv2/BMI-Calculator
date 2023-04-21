@@ -21,7 +21,7 @@ app.post("/",function(req,res){
     Weight = parseInt(req.body.Weight);
     result = Weight/ ((Height/100) * (Height/100));
 
-    res.send(`Your BMI is ${result}`);
+    res.send(`Your BMI is <h1>${result}</h1>`);
 })
 
 
